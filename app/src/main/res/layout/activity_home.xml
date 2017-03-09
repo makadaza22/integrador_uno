@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.per.maka.integrador_1.Home"
+    android:background="@drawable/bg_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/container_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/bk_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logointerno"/>
+
+            <TextView
+                android:id="@+id/bienvenida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:text="Hola MAKA,
+¿qué te gustaría comer hoy?"
+                android:textSize="22dp"
+                android:textAlignment="center"
+                android:layout_margin="20dp"/>
+
+            <ImageView
+                android:id="@+id/hamburguesa"
+                android:layout_centerHorizontal="true"
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/bienvenida"
+                android:src="@drawable/whopper_uno"/>
+
+            <Button
+                android:id="@+id/btn_whopper"
+                android:layout_below="@+id/hamburguesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WHOPPERs"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:background="@drawable/whopper_normal"
+                android:padding="20dp"/>
+
+            <ImageView
+                android:id="@+id/perro"
+                android:layout_centerHorizontal="true"
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:layout_below="@+id/btn_whopper"
+                android:src="@drawable/perro_uno"/>
+
+            <Button
+                android:layout_below="@+id/perro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hot dogs"
+                android:layout_centerHorizontal="true"
+                android:textColor="#fff"
+                android:background="@drawable/whopper_normal"
+                android:padding="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_hotDog"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

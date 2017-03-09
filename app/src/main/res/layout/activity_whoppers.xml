@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_whoppers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.per.maka.integrador_1.Whoppers"
+    android:background="@drawable/bg_pdtos">
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WHOPPERS"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/nav_manager"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/whopper1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_below="@+id/category"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:src="@drawable/whopper_interna_uno"
+                android:id="@+id/burger_uno" />
+
+            <TextView
+                android:layout_below="@id/burger_uno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SANDWICH"
+                android:textColor="#fff"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2.99"
+                android:textColor="#fff"
+                android:textSize="35sp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/precio_1" />
+
+            <Button
+                android:layout_below="@+id/precio_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="order"
+                android:id="@+id/order2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_whopper"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whopper2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_below="@+id/whopper1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="140dp"
+                android:src="@drawable/whopper_interna_dos"
+                android:id="@+id/burger_dos" />
+
+            <TextView
+                android:layout_below="@id/burger_dos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BACON & CHEESE"
+                android:textColor="#fff"
+                android:gravity="bottom"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$4.99"
+                android:textColor="#fff"
+                android:textSize="35sp"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/precio_2" />
+
+            <Button
+                android:layout_below="@+id/precio_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="order"
+                android:id="@+id/order"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_whopper"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9d0a0a"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER DETAILS:"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:padding="18dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:background="@drawable/right_arrow"
+            android:layout_marginRight="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/nav_manager"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="18dp"
+            android:layout_height="30dp"
+            android:background="@drawable/left_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="volver"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bill:"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_marginLeft="55dp"/>
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$6.99"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:layout_marginLeft="10dp"
+            android:shadowColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
